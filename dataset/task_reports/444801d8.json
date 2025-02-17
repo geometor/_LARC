@@ -1,0 +1,103 @@
+{
+    "task_number": 98,
+    "task_name": "444801d8.json",
+    "raw_data_path": "tasks_json/444801d8.json",
+    "task_summary": {
+        "test_input_size": "(10, 10)",
+        "test_output_size": "(10, 10)",
+        "example_input_sizes": "[(10, 10), (10, 10), (10, 10)]",
+        "example_output_sizes": "[(10, 10), (10, 10), (10, 10)]",
+        "number_of_examples": 3,
+        "test_input_colors": "[1, 1, 0, 0, 1, 0, 0, 1, 0, 0]",
+        "test_output_colors": "[1, 1, 0, 0, 1, 0, 0, 1, 0, 0]",
+        "nyu_attempt": 20,
+        "nyu_successful_1_try": 16,
+        "nyu_successful_3_tries": 20
+    },
+    "description_summary": {
+        "number_of_descriptions": 5,
+        "average_confidence": 10.0,
+        "verification_success_rate": 0.8,
+        "average_verification_attempts": 2.0,
+        "average_description_synthesis_time": 66.4,
+        "average_verification_time": 55.0,
+        "descriptions": [
+            {
+                "description_id": "62f21654-67c2-4c68-b5a4-baf1bd48d9c9",
+                "user_id": "a818049a-1bb1-4d5d-b65a-f057cea839fa",
+                "description_input": "In the input, you should see...blue and green grey and whole superimpose",
+                "description_output_grid_size": "The output grid size...red and then green colors and about resize",
+                "description_output": "To make the output, you have to...blue and red color",
+                "is_verified": false,
+                "confidence": 0,
+                "num_verification_attempts": 3,
+                "generation": 2,
+                "user_num_prior_description_experiences": 1,
+                "user_num_prior_build_experiences": 2,
+                "description_synthesis_time": 127.0,
+                "verification_time": 13.0
+            },
+            {
+                "description_id": "7d20ffc4-26a7-4861-8534-1cce9c986860",
+                "user_id": "5a7cbd9b-0fd1-4f3a-822c-764b929e2b6f",
+                "description_input": "In the input, you should see...corresponding",
+                "description_output_grid_size": "The output grid size...fill the color",
+                "description_output": "To make the output, you have to...same color change",
+                "is_verified": true,
+                "confidence": 10,
+                "num_verification_attempts": 1,
+                "generation": 0,
+                "user_num_prior_description_experiences": 4,
+                "user_num_prior_build_experiences": 3,
+                "description_synthesis_time": 61.0,
+                "verification_time": 40.0
+            },
+            {
+                "description_id": "dd2cf990-fe85-4aa1-ae61-5cd719fc9f08",
+                "user_id": "756ee44b-ee04-4278-b0ef-1617485c086d",
+                "description_input": "In the input, you should see...fill single complete grid",
+                "description_output_grid_size": "The output grid size...In the input, you should see...fill single complete grid",
+                "description_output": "To make the output, you have to...In the input, you should see...fill single complete grid",
+                "is_verified": true,
+                "confidence": 10,
+                "num_verification_attempts": 2,
+                "generation": 1,
+                "user_num_prior_description_experiences": 5,
+                "user_num_prior_build_experiences": 0,
+                "description_synthesis_time": 48.0,
+                "verification_time": 74.0
+            },
+            {
+                "description_id": "dd2cf990-fe85-4aa1-ae61-5cd719fc9f08",
+                "user_id": "756ee44b-ee04-4278-b0ef-1617485c086d",
+                "description_input": "In the input, you should see...fill single complete grid",
+                "description_output_grid_size": "The output grid size...In the input, you should see...fill single complete grid",
+                "description_output": "To make the output, you have to...In the input, you should see...fill single complete grid",
+                "is_verified": true,
+                "confidence": 10,
+                "num_verification_attempts": 2,
+                "generation": 1,
+                "user_num_prior_description_experiences": 5,
+                "user_num_prior_build_experiences": 0,
+                "description_synthesis_time": 48.0,
+                "verification_time": 74.0
+            },
+            {
+                "description_id": "dd2cf990-fe85-4aa1-ae61-5cd719fc9f08",
+                "user_id": "756ee44b-ee04-4278-b0ef-1617485c086d",
+                "description_input": "In the input, you should see...fill single complete grid",
+                "description_output_grid_size": "The output grid size...In the input, you should see...fill single complete grid",
+                "description_output": "To make the output, you have to...In the input, you should see...fill single complete grid",
+                "is_verified": true,
+                "confidence": 10,
+                "num_verification_attempts": 2,
+                "generation": 1,
+                "user_num_prior_description_experiences": 5,
+                "user_num_prior_build_experiences": 0,
+                "description_synthesis_time": 48.0,
+                "verification_time": 74.0
+            }
+        ]
+    },
+    "annotated_phrases": []
+}

@@ -95,7 +95,8 @@ def generate_task_reports(output_dir="task_reports"):
             # Add all tag columns
             for col in phrases.columns:
                 if col.startswith("tag_"):
-                    phrase_data[col] = int(phrase_row[col])  # Convert tag values to int
+                    phrase_data[col] = int(phrase_row[col]) if not pd.isna(phrase_row[col]) else 0  # Convert tag values to int, handling NaN
+
             report["annotated_phrases"].append(phrase_data)
 
 
