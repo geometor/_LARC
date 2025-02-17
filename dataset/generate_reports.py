@@ -73,7 +73,7 @@ def generate_task_reports(output_dir="task_reports"):
                 "description_output_grid_size": desc_row["description_output_grid_size"],
                 "description_output": desc_row["description_output"],
                 "is_verified": bool(desc_row["is_verified"]),  # Convert to boolean
-                "confidence": int(desc_row["confidence"]),  # Convert to int
+                "confidence": int(desc_row["confidence"]) if not pd.isna(desc_row["confidence"]) else 0,  # Convert to int, handling NaN
                 "num_verification_attempts": int(desc_row["num_verification_attempts"]), # Convert to int
                 "generation": int(desc_row["generation"]),
                 "user_num_prior_description_experiences": int(desc_row["user_num_prior_description_experiences"]),
