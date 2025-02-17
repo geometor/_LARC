@@ -19,7 +19,7 @@ def generate_task_reports(output_dir="task_reports"):
         tasks = pd.read_csv("summary/task.csv")
         descriptions = pd.read_csv("summary/description.csv")
         joins = pd.read_csv("summary/join.csv")
-        phrases = pd.read_csv("annotated_phrases.csv", sep=",")  # Assuming tab-separated
+        phrases = pd.read_csv("annotated_phrases.csv", sep="\t")  # Changed separator to tab
     except FileNotFoundError as e:
         print(f"Error: Could not find file: {e}. Make sure you are in the 'dataset' directory and have all required CSV files.")
         return
