@@ -37,11 +37,9 @@ def generate_description_reports(output_dir="description_reports"):
         markdown_content = f"# Task: {task_name}\n\n"
 
         for _, desc_row in task_group.iterrows():
-            markdown_content += f"## Description ID: {desc_row['description_id']}\n\n"
-            markdown_content += f"**User ID:** {desc_row['user_id']}\n\n"
-            markdown_content += f"**Description Input:** {desc_row['description_input']}\n\n"
-            markdown_content += f"**Description Output Grid Size:** {desc_row['description_output_grid_size']}\n\n"
-            markdown_content += f"**Description Output:**\n\n{desc_row['description_output']}\n\n"
+            markdown_content += f"{desc_row['description_input']}\n\n"
+            markdown_content += f"{desc_row['description_output_grid_size']}\n\n"
+            markdown_content += f"{desc_row['description_output']}\n\n"
             markdown_content += "---\n\n"  # Separator between descriptions
 
         # Save the Markdown file
