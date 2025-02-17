@@ -35,7 +35,7 @@ def generate_task_reports(output_dir="task_reports"):
         report = {}
 
         # 1. Task Identification
-        report["task_number"] = int(task_group["task_number"].iloc[0])  # Convert to int
+        report["task_number"] = int(task_group["task_id"].iloc[0])  # Convert to int
         report["task_name"] = task_name
         report["raw_data_path"] = f"tasks_json/{task_name}"
 
