@@ -26,9 +26,9 @@ def generate_task_reports(output_dir="task_reports"):
 
     # Merge the dataframes
     task_desc = pd.merge(joins, descriptions, on="description_id", how="left")
-    print(f"Columns of task_desc: {task_desc.columns}")
-    print(f"Columns of tasks: {tasks.columns}")
-    task_desc = pd.merge(task_desc, tasks, on="task_number", how="left")
+    # print(f"Columns of task_desc: {task_desc.columns}")  # Removed debugging print statements
+    # print(f"Columns of tasks: {tasks.columns}")
+    task_desc = pd.merge(task_desc, tasks, on="task_id", how="left")
 
     # Group by task_name to process each task individually
     for task_name, task_group in task_desc.groupby("task_name"):
